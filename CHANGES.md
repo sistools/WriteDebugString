@@ -9,7 +9,7 @@
 * Added CMake helper scripts (**prepare_cmake.sh**, **build_cmake.sh**, **clean_cmake.sh**, **remove_cmake_artefacts.sh**) and **run_all_unit_tests.cmd**;
 * Added **.sis/script_info_lines.txt** and **.sis/project_name.txt**;
 * Project boilerplate bootstrap (**.gitattributes**, **.gitignore**, **.vimrc**, **.vscode/settings.json**, **AUTHORS.md**, **LICENSE**, **README.md**, **INSTALL.md**, **REQUISITES.md**, **TODO.md**, **NEWS.md**);
-* Renamed **main.c** to **WriteDebugString.c**; added version macros, **--version**, and explicit **windows.h** include;
+* Added version macros, **--version**, and explicit **windows.h** include;
 * Retired the broken nmake **Makefile**;
 
 

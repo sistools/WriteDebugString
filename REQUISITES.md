@@ -9,7 +9,7 @@
 
 ## Introduction
 
-The **WriteDebugString** program (implemented in [**WriteDebugString.c**](./WriteDebugString.c)) is implemented in terms of:
+The **WriteDebugString** program (implemented in [**main.c**](./main.c)) is implemented in terms of:
 
 * [**STLSoft**](https://github.com/synesissoftware/STLSoft) - for WinSTL diagnostics helpers and platform utilities;
 
