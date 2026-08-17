@@ -181,11 +181,11 @@ include(GNUInstallDirs)
 # ##########################################################
 # tool
 
-add_executable(${PROJECT_NAME}
+add_executable(${PROJECT_NAME_LOWER}
 	main.c
 )
 
-target_compile_options(${PROJECT_NAME}
+target_compile_options(${PROJECT_NAME_LOWER}
 	PRIVATE
 		$<$<OR:$<C_COMPILER_ID:Clang>,$<C_COMPILER_ID:AppleClang>,$<C_COMPILER_ID:GNU>>:
 			-Werror -Wall -Wextra -pedantic
@@ -199,11 +199,11 @@ target_compile_options(${PROJECT_NAME}
 		>
 )
 
-target_link_libraries(${PROJECT_NAME}
+target_link_libraries(${PROJECT_NAME_LOWER}
 	$<$<STREQUAL:${STLSOFT_INCLUDE_DIR},>:STLSoft::STLSoft>
 )
 
-install(TARGETS ${PROJECT_NAME}
+install(TARGETS ${PROJECT_NAME_LOWER}
 	RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
