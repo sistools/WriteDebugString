@@ -77,8 +77,15 @@ Defect reports, feature requests, and pull requests are welcome on [the **WriteD
 
 Other (similar) projects include:
 
-* [**ReadDebugString**](https://github.com/sistools/ReadDebugString)
-* [**realpath**](https://github.com/sistools/realpath)
+* [**chomp**](https://github.com/sistools/chomp);
+* [**errni**](https://github.com/sistools/errni) (errno on all platforms, and also GetLastError codes on Windows);
+* [**lnunique**](https://github.com/sistools/lnunique);
+* [**lslocales**](https://github.com/sistools/lslocales);
+* [**lstrip**](https://github.com/sistools/lstrip);
+* [**mksock**](https://github.com/sistools/mksock) (Unix-only);
+* [**ReadDebugString**](https://github.com/sistools/ReadDebugString) (Windows-only);
+* [**realpath**](https://github.com/sistools/realpath) (Windows-only);
+* [**rstrip**](https://github.com/sistools/rstrip);
 
 
 ### License
