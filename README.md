@@ -76,7 +76,7 @@ Defect reports, feature requests, and pull requests are welcome on [the **WriteD
 
 ### Related projects
 
-Other (similar) projects include:
+Other **sistools** projects include:
 
 * [**chomp**](https://github.com/sistools/chomp);
 * [**errni**](https://github.com/sistools/errni) (errno on all platforms, and also GetLastError codes on Windows);
