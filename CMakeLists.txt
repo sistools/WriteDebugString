@@ -56,10 +56,16 @@ set(PROJECT_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT
 
 # adhere strictly to C and C++ standards plus extensions. These are actually
 # useless since we do not compile anything; they merely state our intention.
-set(CMAKE_C_STANDARD 17)
+if(NOT CMAKE_C_STANDARD)
+
+	set(CMAKE_C_STANDARD 17)
+endif()
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS ON) # GNU extensions and POSIX standard
-set(CMAKE_CXX_STANDARD 17)
+if(NOT CMAKE_CXX_STANDARD)
+
+	set(CMAKE_CXX_STANDARD 17)
+endif()
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS ON)
 
@@ -181,11 +187,11 @@ include(GNUInstallDirs)
 # ##########################################################
 # tool
 
-add_executable(${PROJECT_NAME}
+add_executable(${PROJECT_NAME_LOWER}
 	main.c
 )
 
-target_compile_options(${PROJECT_NAME}
+target_compile_options(${PROJECT_NAME_LOWER}
 	PRIVATE
 		$<$<OR:$<C_COMPILER_ID:Clang>,$<C_COMPILER_ID:AppleClang>,$<C_COMPILER_ID:GNU>>:
 			-Werror -Wall -Wextra -pedantic
@@ -199,11 +205,11 @@ target_compile_options(${PROJECT_NAME}
 		>
 )
 
-target_link_libraries(${PROJECT_NAME}
+target_link_libraries(${PROJECT_NAME_LOWER}
 	$<$<STREQUAL:${STLSOFT_INCLUDE_DIR},>:STLSoft::STLSoft>
 )
 
-install(TARGETS ${PROJECT_NAME}
+install(TARGETS ${PROJECT_NAME_LOWER}
 	RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
@@ -227,7 +233,7 @@ endif(BUILD_TESTING)
 # ##########################################################
 # completion
 
-message(NOTICE "Generating CMake build scripts for ${PROJECT_NAME} ${PROJECT_VERSION}, for C${CMAKE_C_STANDARD} C++${CMAKE_CXX_STANDARD}")
+message(NOTICE "Generating CMake build scripts for ${PROJECT_NAME} ${PROJECT_VERSION}, for C${CMAKE_C_STANDARD} C++${CMAKE_CXX_STANDARD}, with build type ${CMAKE_BUILD_TYPE}")
 
 
 # ############################## end of file ############################# #
