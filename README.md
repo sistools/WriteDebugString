@@ -4,6 +4,7 @@ Windows CLI that writes messages to the debugger via **OutputDebugString**
 
 
 ![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
+![Windows](https://img.shields.io/badge/OS-Windows-0078D6?style=flat&logo=windows&logoColor=white)
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![GitHub release](https://img.shields.io/github/v/release/sistools/WriteDebugString.svg)](https://github.com/sistools/WriteDebugString/releases/latest)
 [![Last Commit](https://img.shields.io/github/last-commit/sistools/WriteDebugString)](https://github.com/sistools/WriteDebugString/commits/master)
