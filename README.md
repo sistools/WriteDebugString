@@ -4,6 +4,7 @@ Windows CLI that writes messages to the debugger via **OutputDebugString**
 
 
 ![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
+![Windows](https://img.shields.io/badge/OS-Windows-0078D6?style=flat&logo=windows&logoColor=white)
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![GitHub release](https://img.shields.io/github/v/release/sistools/WriteDebugString.svg)](https://github.com/sistools/WriteDebugString/releases/latest)
 [![Last Commit](https://img.shields.io/github/last-commit/sistools/WriteDebugString)](https://github.com/sistools/WriteDebugString/commits/master)
@@ -45,10 +46,10 @@ The project creates a single executable program, **WriteDebugString**.
 ## Examples
 
 ```plaintext
-> WriteDebugString.exe hello world
+> writedebugstring.exe hello world
 wrote 2 message(s) to debug stream
 
-> WriteDebugString.exe --sleep-after-writes "hold for listener"
+> writedebugstring.exe --sleep-after-writes "hold for listener"
 wrote 1 message(s) to debug stream
 ```
 
@@ -75,10 +76,17 @@ Defect reports, feature requests, and pull requests are welcome on [the **WriteD
 
 ### Related projects
 
-Other (similar) projects include:
+Other **sistools** projects include:
 
-* [**ReadDebugString**](https://github.com/sistools/ReadDebugString)
-* [**realpath**](https://github.com/sistools/realpath)
+* [**chomp**](https://github.com/sistools/chomp);
+* [**errni**](https://github.com/sistools/errni) (errno on all platforms, and also GetLastError codes on Windows);
+* [**lnunique**](https://github.com/sistools/lnunique);
+* [**lslocales**](https://github.com/sistools/lslocales);
+* [**lstrip**](https://github.com/sistools/lstrip);
+* [**mksock**](https://github.com/sistools/mksock) (Unix-only);
+* [**ReadDebugString**](https://github.com/sistools/ReadDebugString) (Windows-only);
+* [**realpath**](https://github.com/sistools/realpath) (Windows-only);
+* [**rstrip**](https://github.com/sistools/rstrip);
 
 
 ### License

@@ -1,0 +1,37 @@
+.\" Copyright (c) 2020-2026, Matthew Wilson and Synesis Information Systems
+.\"
+.TH WRITEDEBUGSTRING 1 "August 2026" "writedebugstring 0.0.2" "User Commands"
+.SH NAME
+writedebugstring \- write messages to the Windows debug output stream
+.SH SYNOPSIS
+.B writedebugstring
+[\fIOPTION\fR]
+[\fIMESSAGE\fR ...]
+.SH DESCRIPTION
+.B writedebugstring
+writes each
+.I MESSAGE
+to the Windows debug output stream using
+.BR OutputDebugString .
+Messages can be observed by an attached debugger or a tool such as DebugView.
+After successful writes, the program reports the number of messages written
+on standard output.
+.PP
+This is a Windows-only command.
+.SH OPTIONS
+.TP
+.B \-\-help
+Display usage information and exit.
+.TP
+.B \-\-sleep-after-writes
+Wait five seconds after writing the messages.
+.TP
+.B \-\-version
+Display version information and exit.
+.SH REPORTING BUGS
+Report defects and feature requests at
+https://github.com/sistools/WriteDebugString.
+.SH AUTHOR
+Matthew Wilson and Synesis Information Systems
+.br
+Copyright (c) 2020\-2026, Matthew Wilson and Synesis Information Systems
