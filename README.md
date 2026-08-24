@@ -46,10 +46,10 @@ The project creates a single executable program, **WriteDebugString**.
 ## Examples
 
 ```plaintext
-> WriteDebugString.exe hello world
+> writedebugstring.exe hello world
 wrote 2 message(s) to debug stream
 
-> WriteDebugString.exe --sleep-after-writes "hold for listener"
+> writedebugstring.exe --sleep-after-writes "hold for listener"
 wrote 1 message(s) to debug stream
 ```
 

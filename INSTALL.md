@@ -68,10 +68,10 @@ The primary choice for installation is by use of **CMake**.
 
     ```bash
     $ cd ~/open-source/WriteDebugString
-    $ ./_build/WriteDebugString.exe --help
+    $ ./_build/writedebugstring.exe --help
     ```
 
-   You should see usage output naming **WriteDebugString**.
+   You should see usage output naming **writedebugstring**.
 
 5. Install (optional), as in:
 

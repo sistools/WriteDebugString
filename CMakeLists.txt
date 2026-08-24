@@ -4,7 +4,7 @@
 # Purpose:  Top-level CMake lists file for WriteDebugString
 #
 # Created:  3rd August 2026
-# Updated:  3rd August 2026
+# Updated:  24th August 2026
 #
 # ######################################################################## #
 
@@ -211,6 +211,11 @@ target_link_libraries(${PROJECT_NAME_LOWER}
 
 install(TARGETS ${PROJECT_NAME_LOWER}
 	RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
+
+install(FILES
+	doc/${PROJECT_NAME_LOWER}.1
+	DESTINATION ${CMAKE_INSTALL_MANDIR}/man1
 )
 
 
