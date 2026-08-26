@@ -17,7 +17,7 @@
 
 #define WRITEDEBUGSTRING_VER_MAJOR  0
 #define WRITEDEBUGSTRING_VER_MINOR  0
-#define WRITEDEBUGSTRING_VER_PATCH  2
+#define WRITEDEBUGSTRING_VER_PATCH  3
 
 
 int main(int argc, char* argv[])
