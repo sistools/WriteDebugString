@@ -3,6 +3,7 @@
 
 | Date                 | News Item                                          |
 | -------------------- | -------------------------------------------------- |
+| 27th August 2026     | [0.0.3 released](https://github.com/sistools/WriteDebugString/releases/tag/0.0.3) |
 | 24th August 2026     | [0.0.2 released](https://github.com/sistools/WriteDebugString/releases/tag/0.0.2) |
 | 3rd August 2026      | 0.0.1 released                                     |
 

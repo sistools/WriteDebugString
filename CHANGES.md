@@ -1,6 +1,11 @@
 # WriteDebugString - Changes <!-- omit in toc -->
 
 
+## 0.0.3 - 27th August 2026
+
+* Fixed **cmake/BuildType.cmake** so the default `CMAKE_BUILD_TYPE` is set correctly in the CMake cache (`set(CMAKE_BUILD_TYPE … CACHE …)` instead of `set(CACHE CMAKE_BUILD_TYPE …)`);
+
+
 ## 0.0.2 - 24th August 2026
 
 * Updated the CMake configuration to honour caller-supplied C and C++ standards and report the build type;
